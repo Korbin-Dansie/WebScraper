@@ -20,5 +20,6 @@ from myapp import views
 
 urlpatterns = [
     path('', views.scrape_view, name="scrape"),
+    path('delete/', views.clear_view, name="clear"),
     path('admin/', admin.site.urls),
 ]
